@@ -5,7 +5,8 @@ on:
     # Runs every day at 05:30 UTC (pick any fixed time you like)
     - cron: "30 5 * * *"
   workflow_dispatch:  # allows manual trigger too
-
+permissions:
+  contents: write 
 jobs:
   daily-commit:
     runs-on: ubuntu-latest
